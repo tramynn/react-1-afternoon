@@ -8,6 +8,8 @@ export default class FilterString extends Component {
             userInput: '',
             filteredNames: []
         };
+
+        // this.handleChange = this.handleChange.bind();
     }
     
 
@@ -16,12 +18,12 @@ export default class FilterString extends Component {
     }
 
     filterNames(userInput) {
-        let names = this.state.names;
+        let name = this.state.names;
         let filteredNames = [];
 
-        for (let i = 0; i < names.length; i++) {
-            if (names[i].includes(userInput)) {
-                filteredNames.push(names[i]);
+        for (let i = 0; i < name.length; i++) {
+            if (name[i].includes(userInput)) {
+                filteredNames.push(name[i]);
             }
         }
 
